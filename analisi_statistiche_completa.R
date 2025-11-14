@@ -61,7 +61,7 @@ rileva_pattern_colonne <- function(colnames_list) {
   
   # Pattern comuni per risposta
   pattern_nr <- c("nr", "non responder", "non-responder", "non.responder")
-  pattern_r <- c("^r$", "responder", "r[^$]")
+  pattern_r <- c("\\br\\b", "responder", "^r$")
   
   # Crea mappa delle colonne
   mapping <- list()
