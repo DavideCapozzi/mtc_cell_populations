@@ -25,7 +25,7 @@ library(openxlsx)
 
 CONFIG <- list(
   # File di input
-  percorso_file = "C:/Users/Davide/Downloads/tregs hdvscp.pzfx",
+  percorso_file = "C:/Users/Davide/Downloads/AGING x ipi_nivo chemio.pzfx",
   
   # TIPO DI ANALISI: "stratificato" o "semplice"
   # - "stratificato": tabelle con 4 colonne (es. <65 HD, >65 HD, <65 CP, >65 CP)
@@ -34,16 +34,15 @@ CONFIG <- list(
   
   # ========== CONFIGURAZIONE PER MODALITÀ STRATIFICATA ==========
   # Definizione gruppi da confrontare
-  # gruppo1_labels = c("nr", "non", "controllo", "baseline"),  
-  # gruppo2_labels = c("r", "si", "trattato", "endpoint"),  
-  # gruppo1_nome = "NR",
-  # gruppo2_nome = "R",
+  gruppo1_labels = c("nr", "non", "controllo", "baseline"),
+  gruppo2_labels = c("r", "si", "trattato", "endpoint"),
+  gruppo1_nome = "NR",
+  gruppo2_nome = "R",
   
-  #Definizione gruppi da confrontare
-  gruppo1_labels = c("hd", "healthy donor", "healthy", "sano", "controllo"),
-  gruppo2_labels = c("cp", "cancer patient", "paziente", "malato"),
-  gruppo1_nome = "HD",
-  gruppo2_nome = "CP",
+  # gruppo1_labels = c("hd", "healthy donor", "healthy", "sano", "controllo"),
+  # gruppo2_labels = c("cp", "cancer patient", "paziente", "malato"),
+  # gruppo1_nome = "HD",
+  # gruppo2_nome = "CP",
   
   # Età/stratificazione
   strato1_labels = c("<65", "under 65", "younger", "<65 anni", "giovani"),
